@@ -1,0 +1,1 @@
+export const colorLoader: string = "rgba(255, 204, 51, 1)"

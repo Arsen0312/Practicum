@@ -1,1 +1,0 @@
-export const API_URL = "https://server-re-manga.vercel.app";// export const API_URL = "http://192.168.68.35:5006";

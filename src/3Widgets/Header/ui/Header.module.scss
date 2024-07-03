@@ -1,0 +1,96 @@
+@import "./../../../main.module.scss";
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100vw;
+  height: auto;
+  padding: 0 40px;
+
+  .nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 990px) {
+      display: block;
+      
+    }
+
+    .wrapperLogo {
+      position: relative;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        .logo {
+          width: 50px;
+          margin-right: 10px;
+
+        }
+
+        h1 {
+          color: $red;
+          font-size: 36px;
+        }
+      }
+
+      .button {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+        border: 1px solid gray;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 8px;
+
+        @media (min-width: 990px) {
+          display: none;
+          
+        }
+
+      }
+    }
+
+  }
+
+  .navItems {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    a {
+      color: black;
+      transition: color 400ms;
+
+      &:hover {
+        color: $red;
+        transition: color 400ms;
+      }
+    }
+  }
+
+  .navItemsMobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    max-height: 0;
+    transition: max-height 500ms;
+    overflow: hidden;
+  }
+
+  .navItemsMobile a {
+    margin: 10px 0;
+  }
+
+  .isCollapsed {
+    max-height: 500px;
+    transition: max-height 500ms;
+  }
+
+
+}

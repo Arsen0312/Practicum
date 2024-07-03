@@ -1,0 +1,9 @@
+.App {
+  box-sizing: border-box;
+  color: black;
+}
+.App * {
+  color: black;
+}
+
+/*# sourceMappingURL=App.module.css.map */

@@ -1,0 +1,96 @@
+.main {
+  width: 100vw;
+  background-color: #181d38;
+  height: auto;
+  padding: 40px 5% 10px 0;
+}
+@media (max-width: 900px) {
+  .main {
+    padding: 40px 5% 10px;
+  }
+}
+@media (max-width: 500px) {
+  .main h2 {
+    font-size: 18px;
+  }
+  .main h3 {
+    font-size: 16px;
+  }
+  .main p {
+    font-size: 14px;
+  }
+}
+.main * {
+  color: white;
+}
+.main .companyData {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .main .companyData {
+    flex-direction: column;
+  }
+}
+.main .companyData .wrapperCompanyDate {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 900px) {
+  .main .companyData .wrapperCompanyDate {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .main .companyData .wrapperCompanyDate {
+    width: 100%;
+  }
+}
+.main .companyData .wrapperCompanyDate .elementCompanyDate h2 {
+  margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .main .companyData .wrapperCompanyDate .elementCompanyDate {
+    margin-bottom: 20px;
+  }
+}
+.main .companyData .wrapperCompanyDate .elementCompanyDate .wrapperIconsForSocialMedia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+@media (max-width: 900px) {
+  .main .companyData .wrapperCompanyDate .elementCompanyDate .wrapperIconsForSocialMedia {
+    width: 50%;
+  }
+}
+.main .companyData .wrapperCompanyDate .elementCompanyDate .wrapperIconsForSocialMedia .wrapperIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.main .companyData .wrapperCompanyDate .elementCompanyDate .wrapperIconsForContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .companyData .wrapperCompanyDate .elementCompanyDate .wrapperIconsForContacts .wrapperContact a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .companyDopData {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

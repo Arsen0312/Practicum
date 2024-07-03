@@ -1,0 +1,122 @@
+@import "../../../main.module.scss";
+
+.main {
+  width: 100vw;
+  background-color: $blue;
+  height: auto;
+  padding: 40px 5% 10px 0;
+
+  @media (max-width: 900px) {
+    padding: 40px 5% 10px;
+
+  }
+
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+
+  }
+
+
+  * {
+    color: white;
+  }
+
+  .companyData {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+
+    }
+
+    .wrapperCompanyDate {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+
+      @media (max-width: 900px) {
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 500px) {
+        width: 100%;
+
+      }
+
+      .elementCompanyDate {
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        @media (max-width: 900px) {
+          margin-bottom: 20px;
+        }
+
+        .wrapperIconsForSocialMedia {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 10px;
+
+          @media (max-width: 900px) {
+            width: 50%;
+          }
+
+          .wrapperIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+            border: 1px solid white;
+            border-radius: 50%;
+
+
+          }
+        }
+
+        .wrapperIconsForContacts {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .wrapperContact {
+
+            a {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+
+        }
+
+
+      }
+    }
+
+  }
+
+  .companyDopData {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+
+}
